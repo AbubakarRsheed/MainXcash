@@ -1,0 +1,59 @@
+.z-index-2 {
+    z-index: 2;
+}
+
+.section--bg2 {
+    background-color: #002046;
+}
+
+.feaure-card__icon img {
+    height: 65px;
+}
+
+.feaure-card {
+    margin: 20px;
+}
+
+.pt-150 {
+    padding-top: 150px;
+}
+
+.pb-150 {
+    padding-bottom: 150px;
+}
+
+
+/* business section css start */
+.coutomer-item {
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+    border: 1px solid #e5e5e5;
+    margin-top: -1px;
+    margin-left: -1px;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    .coutomer-item {
+        padding-top: 1.875rem;
+        padding-bottom: 1.875rem;
+    }
+}
+
+.coutomer-item:nth-child(-n + 3) {
+    border-top: none;
+}
+
+.coutomer-item:nth-last-child(-n + 3) {
+    border-bottom: none;
+}
+
+.coutomer-item:nth-of-type(3n + 1) {
+    border-left: none;
+}
+
+.coutomer-item:nth-of-type(3n + 3) {
+    border-right: none;
+}
+
+/* business section css end */

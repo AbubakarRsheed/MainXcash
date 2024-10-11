@@ -1,0 +1,70 @@
+.opacity20 {
+    opacity: 0.2;
+}
+
+.section-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.bg_img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+.section-title {
+    font-size: 3rem;
+}
+
+.mt-3 {
+    margin-top: 1rem !important;
+}
+
+.choose-card {
+    padding: 1.875rem;
+    background-color: #fff;
+    box-shadow: 0 3px 5px rgba(0, 32, 70, 0.15);
+    border: 2px solid #e5e5e5;
+    height: 100%;
+    
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.choose-card:hover {
+    box-shadow: 0 5px 15px rgba(0, 32, 70, 0.15);
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+
+.choose-card__icon img {
+    height: 65px;
+}
+
+.choose-card__content {
+    margin-top: 2.1875rem;
+}
+
+@media (max-width: 991px) {
+    .section-title {
+        font-size: 2.25rem;
+    }
+
+    .choose-card {
+        margin: 10px;
+    }
+}
+

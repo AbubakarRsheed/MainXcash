@@ -1,0 +1,293 @@
+.pt-150 {
+    padding-top: 150px;
+}
+
+.pb-150 {
+    padding-bottom: 150px;
+}
+
+.section-title {
+    font-size: 3rem;
+}
+
+.mt-3 {
+    margin-top: 1rem !important;
+}
+
+.section-wave-img {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+.opacity50 {
+    opacity: 0.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    user-select: none;
+}
+
+.service-card {
+    padding: 50px 30px;
+    background-color: #002550;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid rgba(69, 130, 255, 0.45);
+    position: relative;
+    z-index: 1;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+@media (max-width: 1199px) {
+    .service-card {
+        margin: 2.1875rem 1.25rem;
+        padding: 2.1875rem 1.25rem;
+    }
+}
+
+.service-card:hover {
+    border-color: #4582ff;
+    box-shadow: 0 5px 15px 1px rgba(69, 130, 255, 0.25);
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+
+.service-card::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    clip-path: polygon(46% 66%, 76% 64%, 100% 41%, 100% 100%, 0 100%, 0 79%, 26% 79%);
+    background-color: #002550;
+    z-index: -1;
+    animation: grow 7s infinite linear;
+}
+
+.service-card::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 82%;
+    clip-path: polygon(46% 66%, 76% 64%, 100% 41%, 100% 100%, 0 100%, 0 79%, 26% 79%);
+    background-color: #004393;
+    z-index: -2;
+    animation: grow 7s infinite linear;
+}
+
+.service-card .dotted-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    background-image: radial-gradient(#fff 20%, transparent 0), radial-gradient(#fff 20%, transparent 0);
+    background-size: 10px 10px;
+    background-position: 0 0, 25px 25px;
+    opacity: 0.08;
+    z-index: -1;
+}
+
+.service-card__icon {
+    font-size: 66px;
+    line-height: 1;
+    color: #4582ff;
+}
+
+.service-card__content .title {
+    color: #fff;
+}
+
+.service-card__content p {
+    color: #f2f2f2;
+}
+
+@-webkit-keyframes grow {
+    0% {
+        clip-path: polygon(46% 66%, 76% 64%, 100% 41%, 100% 100%, 0 100%, 0 79%, 26% 79%);
+    }
+
+    25% {
+        clip-path: polygon(48% 70%, 76% 63%, 100% 41%, 100% 100%, 0 100%, 0 78%, 25% 81%);
+    }
+
+    50% {
+        clip-path: polygon(51% 67%, 80% 71%, 100% 45%, 100% 100%, 0 100%, 0 78%, 30% 79%);
+    }
+
+    75% {
+        clip-path: polygon(48% 70%, 76% 63%, 100% 41%, 100% 100%, 0 100%, 0 78%, 25% 81%);
+    }
+
+    100% {
+        clip-path: polygon(46% 66%, 76% 64%, 100% 41%, 100% 100%, 0 100%, 0 79%, 26% 79%);
+    }
+}
+
+@-moz-keyframes grow {
+    0% {
+        clip-path: polygon(46% 66%, 76% 64%, 100% 41%, 100% 100%, 0 100%, 0 79%, 26% 79%);
+    }
+
+    25% {
+        clip-path: polygon(48% 70%, 76% 63%, 100% 41%, 100% 100%, 0 100%, 0 78%, 25% 81%);
+    }
+
+    50% {
+        clip-path: polygon(51% 67%, 80% 71%, 100% 45%, 100% 100%, 0 100%, 0 78%, 30% 79%);
+    }
+
+    75% {
+        clip-path: polygon(48% 70%, 76% 63%, 100% 41%, 100% 100%, 0 100%, 0 78%, 25% 81%);
+    }
+
+    100% {
+        clip-path: polygon(46% 66%, 76% 64%, 100% 41%, 100% 100%, 0 100%, 0 79%, 26% 79%);
+    }
+}
+
+@-ms-keyframes grow {
+    0% {
+        clip-path: polygon(46% 66%, 76% 64%, 100% 41%, 100% 100%, 0 100%, 0 79%, 26% 79%);
+    }
+
+    25% {
+        clip-path: polygon(48% 70%, 76% 63%, 100% 41%, 100% 100%, 0 100%, 0 78%, 25% 81%);
+    }
+
+    50% {
+        clip-path: polygon(51% 67%, 80% 71%, 100% 45%, 100% 100%, 0 100%, 0 78%, 30% 79%);
+    }
+
+    75% {
+        clip-path: polygon(48% 70%, 76% 63%, 100% 41%, 100% 100%, 0 100%, 0 78%, 25% 81%);
+    }
+
+    100% {
+        clip-path: polygon(46% 66%, 76% 64%, 100% 41%, 100% 100%, 0 100%, 0 79%, 26% 79%);
+    }
+}
+
+@keyframes grow {
+    0% {
+        clip-path: polygon(46% 66%, 76% 64%, 100% 41%, 100% 100%, 0 100%, 0 79%, 26% 79%);
+    }
+
+    25% {
+        clip-path: polygon(48% 70%, 76% 63%, 100% 41%, 100% 100%, 0 100%, 0 78%, 25% 81%);
+    }
+
+    50% {
+        clip-path: polygon(51% 67%, 80% 71%, 100% 45%, 100% 100%, 0 100%, 0 78%, 30% 79%);
+    }
+
+    75% {
+        clip-path: polygon(48% 70%, 76% 63%, 100% 41%, 100% 100%, 0 100%, 0 78%, 25% 81%);
+    }
+
+    100% {
+        clip-path: polygon(46% 66%, 76% 64%, 100% 41%, 100% 100%, 0 100%, 0 79%, 26% 79%);
+    }
+}
+
+
+.section-shape {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 84%, 82% 95%, 48% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 84%, 82% 95%, 48% 100%, 0 100%);
+}
+
+@media (max-width: 1199px) {
+    .section-shape {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 82% 98%, 48% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 95%, 82% 98%, 48% 100%, 0 100%);
+    }
+}
+
+@media (max-width: 575px) {
+    .section-shape {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 98%, 100% 98%, 75% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 98%, 100% 98%, 75% 100%, 0 100%);
+    }
+}
+
+.section-shape-two {
+    -webkit-clip-path: polygon(0 10%, 100% 5%, 100% 90%, 0% 100%);
+    clip-path: polygon(0 10%, 100% 5%, 100% 90%, 0% 100%);
+}
+
+@media (max-width: 767px) {
+    .section-shape-two {
+        -webkit-clip-path: polygon(0 8%, 100% 5%, 100% 95%, 0% 100%);
+        clip-path: polygon(0 8%, 100% 5%, 100% 95%, 0% 100%);
+    }
+}
+
+@media (max-width: 575px) {
+    .section-shape-two {
+        -webkit-clip-path: polygon(0 3%, 100% 5%, 100% 98%, 0% 100%);
+        clip-path: polygon(0 3%, 100% 5%, 100% 98%, 0% 100%);
+    }
+}
+
+.section--bg {
+    background-color: #F5F7FA;
+}
+
+.section--bg2 {
+    background-color: #002046;
+}
+
+.section-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.dark-overlay {
+    position: relative;
+    z-index: 1;
+}
+
+.dark-overlay::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #002046;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+@media (max-width: 1199px) {
+    .section-title {
+        font-size: 2.625rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .section-title {
+        font-size: 2.25rem;
+    }
+}

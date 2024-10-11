@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>XCash</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link rel="stylesheet" href="lib/animate/animate.min.css" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">
+    <link href="css/about.css" rel="stylesheet">
+    <link href="css/customer.css" rel="stylesheet">
+    <link href="css/xcash.css" rel="stylesheet">
+    <link href="css/approve.css" rel="stylesheet">
+    <link href="css/overview.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <!-- Spinner End -->
+    <!-- Navbar & Hero Start -->
+
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0 navbar-bg-style">
+            <a href="" class="navbar-brand p-0">
+                <!-- <h1 class="text-primary"><i class="fas fa-search-dollar me-3"></i>Stocker</h1> -->
+                <img src="img/logo.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="announces.html" class="nav-item nav-link">Announcement</a>
+                    <a href="developer.html" class="nav-item nav-link active">Developer</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <div class="nav-right" bis_skin_checked="1">
+                    <a href="login.html" class="btn btn-sm btn--base d-lg-inline-flex align-items-center"
+                        bis_skin_checked="1">
+                        <i class="fas fa-user-circle font-size--18px me-2"></i> Login </a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="main-wrapper" bis_skin_checked="1">
+
+
+            <!-- Hero Section Start -->
+
+            <section class="inner-hero overlay--one bg_img"
+                style="background-image: url('https://script.viserlab.com/xcash/assets/images/frontend/breadcrumb/62efad03dcc131659874563.jpg');">
+                <div class="container" bis_skin_checked="1">
+                    <div class="row justify-content-center" bis_skin_checked="1">
+                        <div class="col-lg-6" bis_skin_checked="1">
+                            <h2 class="page-title text-center text-white">Developer - Api Documentation</h2>
+                            <ul class="page-breadcrumb justify-content-center">
+                                <li><a href="index.html">Home </a></li>
+                                <li>Developer - Api Documentation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Hero Section End -->
+
+
+        </div>
+    </div>
+
+    <!-- Navbar & Hero End -->
+    <!-- Documentation Section Start -->
+
+    <div class="pt-100 pb-100 documentation-section" bis_skin_checked="1">
+        <div class="container" bis_skin_checked="1">
+            <div class="row" bis_skin_checked="1">
+                <div class="col-lg-2" bis_skin_checked="1">
+                    <button class="sidebar-menu-open-btn mb-5"><i class="las la-bars"></i> Menu</button>
+                    <div class="documentation-menu-wrapper" bis_skin_checked="1">
+                        <button class="sidebar-close-btn"><i class="las la-times"></i></button>
+                        <nav class="sidebar-menu">
+                            <ul class="menu">
+                                <li class="has_child"><a href="#introduction-section">Get started</a>
+                                    <ul class="drp-menu">
+                                        <li class=""><a href="#introduction">Introduction</a></li>
+                                        <li class=""><a href="#currency">Supported Currencies</a></li>
+                                        <li class=""><a href="#api-key">Get Api Key</a></li>
+                                        <li class=""><a href="#initiate">Initiate Payment</a></li>
+                                        <li><a href="#ipn">IPN and Get Payment</a></li>
+                                        <li><a href="#plugins">API Plugins</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-lg-10" bis_skin_checked="1">
+                    <div class="doc-body" bis_skin_checked="1">
+                        <div class="doc-section" id="introduction-section" bis_skin_checked="1">
+                            <div class="doc-content" bis_skin_checked="1">
+                                <section id="introduction">
+                                    <h3>Introduction</h3>
+                                    <p class="mt-2">This section describes the <strong>xCash</strong>
+                                        payment gateway API. </p>
+                                    <hr>
+                                    <p class="text-justify">
+                                        <strong>xCash</strong> API is easy to implement in your business software. Our
+                                        API is well formatted URLs, accepts cURL requests, returns JSON responses.
+                                    </p>
+                                    <p class="text-justify">
+                                        You can use the API in test mode, which does not affect your live data. The API
+                                        key is use to authenticate the request and determines the request is valid
+                                        payment or not. For test mode just use the sandbox URL and In case of live mode
+                                        use the live URL from section <a href="#initiate">Initiate Payment</a> .
+                                    </p>
+                                </section>
+                            </div><!-- doc-content end -->
+                        </div><!-- doc-section end -->
+                        <div class="doc-section" id="currency" bis_skin_checked="1">
+                            <div class="doc-content" bis_skin_checked="1">
+                                <section id="">
+                                    <h2>Supported Currencies</h2>
+                                    <p class="mt-2">This section describes the currencies supported by
+                                        <strong>xCash</strong></p>
+                                    <hr>
+                                    <p>
+                                        <strong>xCash</strong>
+                                        allows to make transaction with below currencies. Any new currency may update in
+                                        future.
+                                    </p>
+                                </section>
+                                <section id="setting-two">
+                                    <div class="table-responsive" bis_skin_checked="1">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Currency Name</th>
+                                                    <th>Currency Symbol</th>
+                                                    <th>Currency Code</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td data-label="Currency Name">يورو</td>
+                                                    <td data-label="Currency Symbol">€</td>
+                                                    <td data-label="Currency Code">€</td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Currency Name">United States Dollar</td>
+                                                    <td data-label="Currency Symbol">$</td>
+                                                    <td data-label="Currency Code">USD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Currency Name">سالونيك</td>
+                                                    <td data-label="Currency Symbol">سالونيك</td>
+                                                    <td data-label="Currency Code">سالونيك</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div><!-- table-responsive end -->
+                                </section>
+                            </div><!-- doc-content end -->
+                        </div><!-- doc-section end -->
+                        <div class="doc-section" id="api-key" bis_skin_checked="1">
+                            <div class="doc-content" bis_skin_checked="1">
+                                <section id="">
+                                    <h2>Get The Api Key</h2>
+                                    <p class="mt-2">This section describes how you can get your api key.</p>
+                                    <hr>
+                                    <p class="text-justify">Login to your <strong>xCash</strong>
+                                        merchant account. If you don't have any ? <a target="_blank"
+                                            href=" https://script.viserlab.com/xcash/merchant ">Click Here</a>
+                                    </p>
+                                    <p>Next step is to find the <span class="text--base">Api Key</span>
+                                        menu in your dashboard sidebar. Click the menu. </p>
+                                    <p class="text-justify">The api keys can be found there which is <strong>Public key
+                                            and Secret key.</strong>
+                                        Use these keys to initiate the API request. Every time you can generate new API
+                                        key by clicking <span class="text--base">Generate Api Key</span>
+                                        button. Remember do not share these keys with anyone. </p>
+                                </section>
+                            </div><!-- doc-content end -->
+                        </div><!-- doc-section end -->
+                        <div class="doc-section" id="initiate" bis_skin_checked="1">
+                            <div class="doc-content" bis_skin_checked="1">
+                                <section id="">
+                                    <h2>Initiate Payment</h2>
+                                    <p class="mt-2">This section describes the process of initaiing the payment.</p>
+                                    <hr>
+                                    <p>
+                                        To initiate the payment follow the example code and be careful with the
+                                        perameters. You will need to make request with these following API end points.
+                                    </p>
+                                    <p>
+                                        <strong>Live End Point:</strong>
+                                        <span class="text--base"> https://script.viserlab.com/xcash/payment/initiate
+                                        </span>
+                                    </p>
+                                    <p class="d-flex align-items-center flex-wrap gap-2">
+                                        <strong>Test End Point:</strong>
+                                        <span class="text--base responsive-text">
+                                            https://script.viserlab.com/xcash/sandbox/payment/initiate </span>
+                                    </p>
+                                    <p>
+                                        <strong>Test Mode Mail:</strong>
+                                        <span class="text--base">test_mode@mail.com</span>
+                                    </p>
+                                    <p>
+                                        <strong>Test Mode Verification Code:</strong>
+                                        <span class="text--base">222666</span>
+                                    </p>
+                                    <p>
+                                        <strong>Request Method:</strong>
+                                        <span class="text--base">POST</span>
+                                    </p>
+                                </section>
+                                <section id="setting-two">
+                                    <p>Request to the end point with the following parameters below.</p>
+                                    <div class="table-responsive" bis_skin_checked="1">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Param Name</th>
+                                                    <th>Param Type</th>
+                                                    <th>Description</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td data-label="Param Name">public_key</td>
+                                                    <td data-label="Param Type">string (50)</td>
+                                                    <td data-label="Description">
+                                                        <span
+                                                            class="badge badge--danger font-size--12px">Required</span>
+                                                        Your Public API key
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Param Name">identifier</td>
+                                                    <td data-label="Param Type">string (20)</td>
+                                                    <td data-label="Description">
+                                                        <span
+                                                            class="badge badge--danger font-size--12px">Required</span>
+                                                        Identifier is basically for identify payment at your end
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Param Name">currency</td>
+                                                    <td data-label="Param Type">string (4)</td>
+                                                    <td data-label="Description">
+                                                        <span
+                                                            class="badge badge--danger font-size--12px">Required</span>
+                                                        Currency Code, Must be in Upper Case. e.g. USD,EUR
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Param Name">amount</td>
+                                                    <td data-label="Param Type">decimal</td>
+                                                    <td data-label="Description">
+                                                        <span
+                                                            class="badge badge--danger font-size--12px">Required</span>
+                                                        Payment amount.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Param Name">details</td>
+                                                    <td data-label="Param Type">string (100)</td>
+                                                    <td data-label="Description">
+                                                        <span
+                                                            class="badge badge--danger font-size--12px">Required</span>
+                                                        Details of your payment or transaction.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Param Name">ipn_url</td>
+                                                    <td data-label="Param Type">string</td>
+                                                    <td data-label="Description">
+                                                        <span
+                                                            class="badge badge--danger font-size--12px">Required</span>
+                                                        The url of instant payment notification.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Param Name">success_url</td>
+                                                    <td data-label="Param Type">string</td>
+                                                    <td data-label="Description">
+                                                        <span
+                                                            class="badge badge--danger font-size--12px">Required</span>
+                                                        Payment success redirect url.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Param Name">cancel_url</td>
+                                                    <td data-label="Param Type">string</td>
+                                                    <td data-label="Description">
+                                                        <span
+                                                            class="badge badge--danger font-size--12px">Required</span>
+                                                        Payment cancel redirect url.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Param Name">site_logo</td>
+                                                    <td data-label="Param Type">string/url</td>
+                                                    <td data-label="Description">
+                                                        <span
+                                                            class="badge badge--danger font-size--12px">Required</span>
+                                                        Your business site logo.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Param Name">checkout_theme</td>
+                                                    <td data-label="Param Type">string</td>
+                                                    <td data-label="Description">
+                                                        <span class="badge badge--info font-size--12px">Optional</span>
+                                                        Checkout form theme dark/light. Default theme is light
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Param Name">customer_name</td>
+                                                    <td data-label="Param Type">string (30)</td>
+                                                    <td data-label="Description">
+                                                        <span
+                                                            class="badge badge--danger font-size--12px">Required</span>
+                                                        Customer name.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Param Name">customer_email</td>
+                                                    <td data-label="Param Type">string (30)</td>
+                                                    <td data-label="Description">
+                                                        <span
+                                                            class="badge badge--danger font-size--12px">Required</span>
+                                                        Customer valid email.
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div><!-- table-responsive end -->
+
+                                </section>
+                            </div><!-- doc-content end -->
+                            <div class="doc-code" bis_skin_checked="1">
+                                <div class="doc-code-inner" bis_skin_checked="1">
+                                    <div class="code-block" bis_skin_checked="1">
+                                        <button class="clipboard-btn" data-clipboard-target="#php">copy</button>
+                                        <div class="code-block-header" bis_skin_checked="1">Example PHP code</div>
+
+                                        <pre><code class="language-php hljs php" id="php"><span class="hljs-meta">&lt;?php</span>
+    <span class="hljs-variable">$parameters</span> = [
+        <span class="hljs-string">'identifier'</span> =&gt; <span class="hljs-string">'DFU80XZIKS'</span>,
+        <span class="hljs-string">'currency'</span> =&gt; <span class="hljs-string">'USD'</span>,
+        <span class="hljs-string">'amount'</span> =&gt; <span class="hljs-number">100.00</span>,
+        <span class="hljs-string">'details'</span> =&gt; <span class="hljs-string">'Purchase T-shirt'</span>,
+        <span class="hljs-string">'ipn_url'</span> =&gt; <span class="hljs-string">'http://example.com/ipn_url.php'</span>,
+        <span class="hljs-string">'cancel_url'</span> =&gt; <span class="hljs-string">'http://example.com/cancel_url.php'</span>,
+        <span class="hljs-string">'success_url'</span> =&gt; <span class="hljs-string">'http://example.com/success_url.php'</span>,
+        <span class="hljs-string">'public_key'</span> =&gt; <span class="hljs-string">'your_public_key'</span>,
+        <span class="hljs-string">'site_logo'</span> =&gt; <span class="hljs-string">'https://script.viserlab.com/xcash/assets/images/logoIcon/logo.png'</span>,
+        <span class="hljs-string">'checkout_theme'</span> =&gt; <span class="hljs-string">'dark'</span>,
+        <span class="hljs-string">'customer_name'</span> =&gt; <span class="hljs-string">'John Doe'</span>,
+        <span class="hljs-string">'customer_email'</span> =&gt; <span class="hljs-string">'john@mail.com'</span>,
+
+    ];
+
+    <span class="hljs-comment">//live end point</span>
+    <span class="hljs-variable">$url</span> = <span class="hljs-string">"https://script.viserlab.com/xcash/payment/initiate"</span>;
+
+    <span class="hljs-comment">//test end point</span>
+    <span class="hljs-variable">$url</span> = <span class="hljs-string">"https://script.viserlab.com/xcash/sandbox/payment/initiate"</span>;
+
+    <span class="hljs-variable">$ch</span> = curl_init();
+    curl_setopt(<span class="hljs-variable">$ch</span>, CURLOPT_SSL_VERIFYHOST, <span class="hljs-literal">false</span>);
+    curl_setopt(<span class="hljs-variable">$ch</span>, CURLOPT_URL, <span class="hljs-variable">$url</span>);
+    curl_setopt(<span class="hljs-variable">$ch</span>, CURLOPT_POSTFIELDS,  <span class="hljs-variable">$parameters</span>);
+    curl_setopt(<span class="hljs-variable">$ch</span>, CURLOPT_RETURNTRANSFER, <span class="hljs-literal">true</span>);
+    <span class="hljs-variable">$result</span> = curl_exec(<span class="hljs-variable">$ch</span>);
+    curl_close(<span class="hljs-variable">$ch</span>);
+
+    <span class="hljs-comment">//$result contains the response back.</span>
+<span class="hljs-meta">?&gt;</span></code></pre>
+
+                                    </div><!-- code-block end -->
+                                    <div class="code-block" bis_skin_checked="1">
+                                        <button class="clipboard-btn" data-clipboard-target="#response">copy</button>
+                                        <div class="code-block-header" bis_skin_checked="1">Example Responses</div>
+
+                                        <pre><code class="language-php hljs php" id="response"><span class="hljs-comment">//Error Response.</span>
+{
+    <span class="hljs-string">"error"</span>: <span class="hljs-string">"true"</span>,
+    <span class="hljs-string">"message"</span>: <span class="hljs-string">"Invalid api key"</span>
+}
+
+<span class="hljs-comment">//Success Response.</span>
+{
+    <span class="hljs-string">"success"</span>: <span class="hljs-string">"ok"</span>,
+    <span class="hljs-string">"message"</span>: <span class="hljs-string">"Payment Initiated. Redirect to url."</span>,
+    <span class="hljs-string">"url"</span>:<span class="hljs-string">"http://example.com/initiate/payment/checkout?payment_id=eJSAASDxdrt4DASDASVNASJA7893232432cvmdsamnvASF"</span>
+}
+</code></pre>
+
+                                    </div><!-- code-block end -->
+                                </div>
+                            </div>
+                        </div><!-- doc-section end -->
+
+                        <div class="doc-section" id="ipn" bis_skin_checked="1">
+                            <div class="doc-content" bis_skin_checked="1">
+                                <section id="">
+                                    <h2>Validate The Payment and IPN</h2>
+                                    <p class="mt-2">This section describes the process to get your instant payment
+                                        notification.</p>
+                                    <hr>
+                                    <p>
+                                        To initiate the payment follow the example code and be careful with the
+                                        perameters. You will need to make request with these following API end points.
+                                    </p>
+                                    <p>
+                                        <strong>End Point:</strong> <span class="text--base">Your business application
+                                            ipn url.</span>
+                                    </p>
+                                    <p><strong>Request Method:</strong> <span class="text--base">POST</span></p>
+                                </section>
+                                <section id="setting-two">
+                                    <p>You will get following parameters below.</p>
+                                    <div class="table-responsive" bis_skin_checked="1">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Param Name</th>
+                                                    <th>Description</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td data-label="Param Name">status</td>
+                                                    <td data-label="Description">Payment success status.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Param Name">identifier</td>
+                                                    <td data-label="Description">Identifier is basically for identify
+                                                        payment at your end.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Param Name">signature</td>
+                                                    <td data-label="Description">A hash signature to verify your payment
+                                                        at your end.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Param Name">data</td>
+                                                    <td data-label="Description"> Data contains some basic information
+                                                        with charges, amount, currency, payment transaction id etc.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div><!-- table-responsive end -->
+                                </section>
+                            </div><!-- doc-content end -->
+                            <div class="doc-code" bis_skin_checked="1">
+                                <div class="doc-code-inner" bis_skin_checked="1">
+                                    <div class="code-block" bis_skin_checked="1">
+                                        <button class="clipboard-btn" data-clipboard-target="#ipn-s">copy</button>
+                                        <div class="code-block-header" bis_skin_checked="1">Example PHP code</div>
+
+                                        <pre><code class="language-php hljs php" id="ipn-s"><span class="hljs-meta">&lt;?php</span>
+    <span class="hljs-comment">//Receive the response parameter</span>
+    <span class="hljs-variable">$status</span> = <span class="hljs-variable">$_POST</span>[<span class="hljs-string">'status'</span>];
+    <span class="hljs-variable">$signature</span> = <span class="hljs-variable">$_POST</span>[<span class="hljs-string">'signature'</span>];
+    <span class="hljs-variable">$identifier</span> = <span class="hljs-variable">$_POST</span>[<span class="hljs-string">'identifier'</span>];
+    <span class="hljs-variable">$data</span> = <span class="hljs-variable">$_POST</span>[<span class="hljs-string">'data'</span>];
+
+    <span class="hljs-comment">// Generate your signature</span>
+    <span class="hljs-variable">$customKey</span> = <span class="hljs-variable">$data</span>[<span class="hljs-string">'amount'</span>].<span class="hljs-variable">$identifier</span>;
+    <span class="hljs-variable">$secret</span> = <span class="hljs-string">'YOUR_SECRET_KEY'</span>;
+    <span class="hljs-variable">$mySignature</span> = strtoupper(hash_hmac(<span class="hljs-string">'sha256'</span>, <span class="hljs-variable">$customKey</span> , <span class="hljs-variable">$secret</span>));
+
+    <span class="hljs-variable">$myIdentifier</span> = <span class="hljs-string">'YOUR_GIVEN_IDENTIFIER'</span>;
+
+    <span class="hljs-keyword">if</span>(<span class="hljs-variable">$status</span> == <span class="hljs-string">"success"</span> &amp;&amp; <span class="hljs-variable">$signature</span> == <span class="hljs-variable">$mySignature</span> &amp;&amp;  <span class="hljs-variable">$identifier</span> ==  <span class="hljs-variable">$myIdentifier</span>){
+        <span class="hljs-comment">//your operation logic</span>
+    }
+<span class="hljs-meta">?&gt;</span></code></pre>
+
+                                    </div><!-- code-block end -->
+                                </div>
+                            </div>
+                        </div><!-- doc-section end -->
+
+                        <div class="doc-section" id="plugins" bis_skin_checked="1">
+                            <div class="doc-content" bis_skin_checked="1">
+                                <section>
+                                    <h2>API Plugin</h2>
+                                    <hr>
+                                    <p>
+                                        You can use our ready made API Plugin for your desire CMS to collect payment
+                                        using xCash. </p>
+
+                                    <div class="plugins" bis_skin_checked="1">
+                                        <div class="plugin-item" bis_skin_checked="1">
+                                            <div class="plugin-item__thumb" bis_skin_checked="1">
+                                                <img src="https://script.viserlab.com/xcash/assets/plugins/WooCommerce.png?v3"
+                                                    alt="">
+                                            </div>
+                                            <div class="plugin-item__content" bis_skin_checked="1">
+                                                <h3 class="plugin-item__title">WooCommerce Plugin</h3>
+                                                <a href="javascript:void(0)" onclick="downloadFile()"><img
+                                                        src="https://script.viserlab.com/xcash/assets/images/download.png"
+                                                        alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="plugin-item" bis_skin_checked="1">
+                                            <div class="plugin-item__thumb" bis_skin_checked="1">
+                                                <img src="https://script.viserlab.com/xcash/assets/plugins/Prestashop.png?v3"
+                                                    alt="">
+                                            </div>
+                                            <div class="plugin-item__content" bis_skin_checked="1">
+                                                <h3 class="plugin-item__title">Prestashop Plugin</h3>
+                                                <a href="javascript:void(0)" onclick="downloadFile()"><img
+                                                        src="https://script.viserlab.com/xcash/assets/images/download.png"
+                                                        alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Documentation Section End -->
+
+    <!-- Footer Section Start -->
+
+    <footer class="footer bg_img"
+        style="background-image: url('https://script.viserlab.com/xcash/assets/images/frontend/footer/62efa690cf47d1659872912.png');">
+        <div class="footer__cta" bis_skin_checked="1">
+            <div class="container" bis_skin_checked="1">
+                <div class="row justify-content-center" bis_skin_checked="1">
+                    <div class="col-xl-9 col-lg-10" bis_skin_checked="1">
+                        <div class="cta-wrapper rounded-3 wow fadeInUp" data-wow-duration="0.3" data-wow-delay="0.3s"
+                            style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;"
+                            bis_skin_checked="1">
+                            <div class="row justify-content-between align-items-center" bis_skin_checked="1">
+                                <div class="col-xxl-7 col-lg-8 text-lg-start text-center" bis_skin_checked="1">
+                                    <h2 class="title text-white">Do you want to send money anytime to anywhere?</h2>
+                                </div>
+                                <div class="col-lg-4 text-lg-end text-center mt-lg-0 mt-4" bis_skin_checked="1">
+                                    <a href="https://script.viserlab.com/xcash/register" class="btn btn--dark"
+                                        bis_skin_checked="1">Get Started</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__top" bis_skin_checked="1">
+            <div class="widget-area" bis_skin_checked="1">
+                <div class="container" bis_skin_checked="1">
+                    <div class="row gy-5" bis_skin_checked="1">
+                        <div class="col-lg-3" bis_skin_checked="1">
+                            <div class="footer-widget" bis_skin_checked="1">
+                                <a href="https://script.viserlab.com/xcash" class="footer-logo" bis_skin_checked="1">
+                                    <img src="https://script.viserlab.com/xcash/assets/images/logoIcon/logo.png"
+                                        alt="image">
+                                </a>
+                                <p class="text-white mt-4">The Ultimate Solution for e-Wallet Service
+
+                                    Complete solution for mobile money and wallet system. Comes with User, Agent, and
+                                    Merchant system with eCommerce API and QR code ready.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-4 ps-lg-4" bis_skin_checked="1">
+                            <div class="footer-widget" bis_skin_checked="1">
+                                <h6 class="footer-widget__title text-white">Quick Menu</h6>
+                                <ul class="footer-link-list">
+                                    <li><a href="about.html" bis_skin_checked="1">About</a></li>
+                                    <li><a href="announces.html" bis_skin_checked="1">Announcement</a></li>
+                                    <li><a href="developer.html" bis_skin_checked="1">Developer</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-4 ps-lg-4" bis_skin_checked="1">
+                            <div class="footer-widget" bis_skin_checked="1">
+                                <h6 class="footer-widget__title text-white">Get Started</h6>
+                                <ul class="footer-link-list">
+                                    <li><a href="login.html" bis_skin_checked="1">Login as User</a></li>
+                                    <li><a href="login.html" bis_skin_checked="1">Login as
+                                            Agent</a></li>
+                                    <li><a href="login.html" bis_skin_checked="1">Login
+                                            as Merchant</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-4 ps-lg-4" bis_skin_checked="1">
+                            <div class="footer-widget" bis_skin_checked="1">
+                                <h6 class="footer-widget__title text-white">Useful links</h6>
+                                <ul class="footer-link-list">
+                                    <li>
+                                        <a href="privacy.html" bis_skin_checked="1">
+                                            Privacy Policy
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="terms-of-service.html" bis_skin_checked="1">
+                                            Terms of Service
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="security-policy.html" bis_skin_checked="1">
+                                            Security Policy
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-contact-area" bis_skin_checked="1">
+                <div class="container" bis_skin_checked="1">
+                    <div class="row justify-content-center align-items-center mb-5 footer-contact-wrapper"
+                        bis_skin_checked="1">
+                        <div class="col-md-4 col-sm-6 footer-contact-item" bis_skin_checked="1">
+                            <div class="footer-contact-card" bis_skin_checked="1">
+                                <div class="icon" bis_skin_checked="1">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="content" bis_skin_checked="1">
+                                    <h5><a href="mailto:company@email.com" bis_skin_checked="1">company@email.com</a>
+                                    </h5>
+                                    <span class="caption font-size--14px">Mail Address</span>
+                                </div>
+                            </div><!-- footer-contact-card end -->
+                        </div>
+                        <div class="col-md-4 col-sm-6 footer-contact-item" bis_skin_checked="1">
+                            <div class="footer-contact-card" bis_skin_checked="1">
+                                <div class="icon" bis_skin_checked="1">
+                                    <i class="fas fa-phone-volume"></i>
+                                </div>
+                                <div class="content" bis_skin_checked="1">
+                                    <h5><a href="tel:+1212121245545" bis_skin_checked="1">+1212121245545</a>
+                                    </h5>
+                                    <span class="caption font-size--14px">Call Us</span>
+                                </div>
+                            </div><!-- footer-contact-card end -->
+                        </div>
+                        <div class="col-md-4 col-sm-6 footer-contact-item" bis_skin_checked="1">
+                            <div class="footer-contact-card" bis_skin_checked="1">
+                                <div class="icon" bis_skin_checked="1">
+                                    <i class="fas fa-map-marked-alt"></i>
+                                </div>
+                                <div class="content" bis_skin_checked="1">
+                                    <h5 class="text-white">22 bekar streat, London, England</h5>
+                                    <span class="caption font-size--14px">Address</span>
+                                </div>
+                            </div><!-- footer-contact-card end -->
+                        </div>
+                    </div><!-- row end -->
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom" bis_skin_checked="1">
+            <div class="container" bis_skin_checked="1">
+                <div class="row" bis_skin_checked="1">
+                    <div class="col-lg-12 text-center" bis_skin_checked="1">
+                        <p class="text-white" style="margin: 0;">© 2024 xCash. All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer Section End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
